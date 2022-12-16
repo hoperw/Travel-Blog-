@@ -1,0 +1,28 @@
+<html lang="en">
+<%- include('../partials/header.ejs') %>
+<body>
+<main class="all-travels-main">
+
+    <h1 class="all-travels-h1">All Countries</h1>
+    <nav class="all-travels-nav">
+        <ul>
+            <li><a href="map">Map</a></li>
+            <li><a href="all-countries">All Countries</a></li>
+            <li><a href="#map">Search</a></li>
+        </ul>
+    </nav>
+    <div class="section-wrapper">
+        <section class="all-countries-section">
+            <% data.forEach(obj => { %> 
+                <div class="grid-element">
+                    <a href=<%= obj.id%>><%= obj %></a>
+                </div>
+            <% }) %> 
+        </section>
+    </div>
+
+
+    </main>  
+</body>
+<%- include('../partials/footer.ejs') %>
+</html>

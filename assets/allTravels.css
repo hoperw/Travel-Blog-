@@ -1,0 +1,109 @@
+
+.all-travels-h1 {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.all-travels-main {
+    max-width: 80%;
+    margin: auto;
+}
+
+.all-travels-nav {
+    display: flex;
+    justify-content: center;
+}
+.all-travels-nav ul {
+    display: flex;
+    list-style: none;
+}
+.all-travels-nav ul li {
+    margin: 0 .5em;
+}
+.all-travels-nav ul li a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+
+.section-wrapper {
+    width: 100%;
+    padding: 2em 0;
+}
+
+.img-grid {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.grid-element {
+    height: 200px;
+    max-width: 300px;
+    margin: 2rem .5rem;
+}
+
+.figcaption {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.all-travels-img {
+    max-width: 300px;
+    box-shadow: 8px 8px 2px 1px rgba(99, 99, 100, 0.205);
+    margin: 0 0 .3em 0;
+}
+
+/* Map Styles */
+
+#map {
+    height: 680px;
+    max-width: 1030px;
+    margin: auto;
+}
+
+/* All Countries Page Styles */
+
+.all-countries-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-countries-section .grid-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: solid 3px rgba(12, 100, 9, 0.308);
+}
+
+.all-countries-section a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+
+    #map, .section-wrapper, .map-section {
+        width: 100%;
+    }
+
+    .all-travels-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

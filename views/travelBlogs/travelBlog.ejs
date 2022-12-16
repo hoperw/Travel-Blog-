@@ -1,0 +1,46 @@
+<html lang="en">
+<%- include('../partials/header.ejs') %>
+<body>
+    <main class="travel-blog-main">
+        <h1 class="travel-blog-h1"><%= data.title %></h1>
+        <nav class="all-travels-nav">
+            <ul>
+                <li><a href="map">Map</a></li>
+                <li><a href="all-countries">All Countries</a></li>
+                <li><a href="#map">Search</a></li>
+            </ul>
+        </nav>
+        <section class="travel-blog-section">
+
+            <p><%= data.blog.slice(0,1000) %></p>
+            <p><%= data.blog.slice(1001,2000) %></p>
+            <p><%= data.blog.slice(2001,data.blog.length) %></p>
+
+        </section>
+
+        <section class="form-section">
+            <div class="form-wrapper">
+                <label class="name-label" for="name">Name: </label>
+                <textarea name="name" id="name" cols="30" rows="1"></textarea>
+    
+                <label class="comment-label" for="comment">Comment: </label>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    
+                <button class="form-wrapper-button">Submit</button>
+            </div>
+        </section>
+
+        <div class="comment-wrapper">
+            <% data.comments.forEach( obj => {%> 
+                <div class="comment-element">
+                    <p>Name: <%= obj.name %></p>
+                    <p>Comment: <%= obj.body %> </p>
+                </div>
+            <% }) %> 
+        </div>
+
+
+    </main>
+</body>
+<%- include('../partials/footer.ejs') %>
+</html>

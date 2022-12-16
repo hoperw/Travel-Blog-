@@ -1,0 +1,36 @@
+
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+    background-color: whitesmoke;
+    box-shadow: 8px 12px 2px 1px rgba(99, 99, 100, 0.205);
+    width: 80%;
+}
+.home-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 2em 0;
+}
+.home-text-wrapper p {
+    line-height: 1.4em;
+    font-size: 1.2em;
+    width: 90%;
+    margin: .5em 0;
+}
+
+@media screen and (max-width: 600px) {
+
+    .home-wrapper, .home-text-section, .home-text-wrapper {
+        width: 100%;
+    }
+
+}
